@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link }
 from 'react-router-dom'
-
+import TicTacToe from './TicTacToe'
 const Example1 = () => (
   <div>
     <h2>Example1</h2>
@@ -31,12 +31,12 @@ const Example3 = ({ match }) => (
       </li>
       <li>
         <Link to={`${match.url}/components`}>
-          Example1
+          Example2
         </Link>
       </li>
       <li>
         <Link to={`${match.url}/props-v-state`}>
-          Example1
+          Example3
         </Link>
       </li>
     </ul>
@@ -78,6 +78,8 @@ export default class App extends Component {
         <div>9</div>
       </div>
       <BasicExample />
+      <br />
+      <TicTacToe />
     </div>
   }
 }
