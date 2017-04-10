@@ -4,13 +4,23 @@ from 'react-router-dom'
 import TicTacToe from './TicTacToe'
 const Example1 = () => (
   <div>
-    <h2>Example1</h2>
+    <div className='wrapper'>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
   </div>
 )
 
 const Example2 = () => (
   <div>
-    <h2>Example2</h2>
+    <TicTacToe />
   </div>
 )
 
@@ -26,8 +36,8 @@ const Example3 = ({ match }) => (
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>
-          Example1
-        </Link>
+        Example1
+      </Link>
       </li>
       <li>
         <Link to={`${match.url}/components`}>
@@ -51,8 +61,8 @@ const BasicExample = () => (
   <Router>
     <div>
       <ul>
-        <li><Link to='/'>Example1</Link></li>
-        <li><Link to='/1'>Example2</Link></li>
+        <li><Link to='/'>Css Grid Example</Link></li>
+        <li><Link to='/1'>React Tic Tac Toe</Link></li>
         <li><Link to='/2'>Example3</Link></li>
       </ul>
       <hr />
@@ -66,20 +76,8 @@ const BasicExample = () => (
 export default class App extends Component {
   render () {
     return <div>
-      <div className='wrapper'>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-      </div>
       <BasicExample />
       <br />
-      <TicTacToe />
     </div>
   }
 }

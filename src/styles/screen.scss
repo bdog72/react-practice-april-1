@@ -25,6 +25,10 @@ body {
   color: white;
 }
 
+.wrapper div:nth-child(even) {
+  background-color: black;
+}
+
 .square {
   border: 1px solid black;
   width: 40px;
