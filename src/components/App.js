@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link }
 from 'react-router-dom'
 import TicTacToe from './TicTacToe'
+import Rrouter from './Rrouter.js'
 const Example1 = () => (
   <div>
     <div className='wrapper'>
@@ -78,6 +79,7 @@ export default class App extends Component {
     return <div>
       <BasicExample />
       <br />
+      <Rrouter />
     </div>
   }
 }
